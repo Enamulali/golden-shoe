@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
+  padding-top: 2em;
   ${mobile({ flexDirection: "column" })}
 `;
 

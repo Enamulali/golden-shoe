@@ -20,7 +20,7 @@ const Items = () => {
   return (
     <>
       <Categories setCurrentCategory={setCurrentCategory} />
-
+      {isLoading ? "Loading..." : null}
       <div className="items-container">
         <ul className="item-ul">
           {items.map((item) => {

@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Slider />
-      {!mobile ? <Items /> : null}
+      {mobile ? <Items /> : null}
     </div>
   );
 };
