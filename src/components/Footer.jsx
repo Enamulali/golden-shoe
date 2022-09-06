@@ -5,6 +5,7 @@ import {
   AiFillInstagram,
   AiFillTwitterCircle,
 } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -67,12 +68,14 @@ const Footer = () => {
       <Left>
         <Logo>GOLDEN SHOE.</Logo>
         <Desc>Golden Shoe 10 times winner of National Shoe Awards!</Desc>
+        <Link to={"/returns"}>
+          <p>Returns Information</p>
+        </Link>
       </Left>
       <Center>
         <Title>Handy Links</Title>
         <List>
           <ListItem>Home</ListItem>
-          <ListItem>Cart</ListItem>
           <ListItem>Men's Fashion</ListItem>
           <ListItem>Women's Fashion</ListItem>
           <ListItem>My Account</ListItem>
@@ -85,7 +88,6 @@ const Footer = () => {
           <AiFillInstagram size={32} />
           <AiFillTwitterCircle size={32} />
         </SocialContainer>
-
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
     </Container>
