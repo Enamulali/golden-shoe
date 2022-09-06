@@ -1,10 +1,11 @@
 import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { getItemById } from "../utils/API";
+import { useNavigate } from "react-router-dom";
 
 const SingleItem = () => {
   const { item_id } = useParams();
-
+  const navigate = useNavigate();
   const [singleItem, setSingleItem] = useState([]);
 
   useEffect(() => {
@@ -16,6 +17,7 @@ const SingleItem = () => {
   return (
     <>
       <div className="single-item">
+        <button onClick={() => navigate(-1)}>Go back</button>
         <h3>{singleItem.item_name}</h3>
         <img
           src={singleItem.img_url}
