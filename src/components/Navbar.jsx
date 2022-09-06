@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Container = styled.div`
+  height: 20vh;
+  background-color: #4b6587;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
 const Title = styled.h1`
   box-sizing: border-box;
@@ -17,8 +19,8 @@ const Title = styled.h1`
   padding: 2em;
   margin-bottom: 0em;
   margin-top: 0em;
-  font-size: 24px;
-  color: #4b6587;
+  font-size: 30px;
+  color: white;
 `;
 
 const Navbar = () => {
