@@ -9,12 +9,23 @@ import Home from "./pages/Home";
 import Items from "./pages/Items";
 import Returns from "./pages/Returns";
 import { useNavigate } from "react-router-dom";
+import { GrLinkTop } from "react-icons/gr";
+import { useRef } from "react";
 
 function App() {
   const navigate = useNavigate();
 
+  const nav = useRef(null);
+  const handleScroll = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behaviour: "smooth",
+    });
+  };
+
   return (
     <>
+      <div ref={nav} />
       <Banner />
       <Navbar />
       {window.location.pathname.includes(`/items/`) ? (
@@ -30,6 +41,9 @@ function App() {
         <Route path="/returns" element={<Returns />} />
         <Route path="/chat" element={<Chat />} />
       </Routes>
+      <button className="scroll-btn" onClick={() => handleScroll(nav)}>
+        <GrLinkTop className="scroll" />
+      </button>
       <Footer />
     </>
   );

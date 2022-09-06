@@ -22,24 +22,6 @@ export const sliderItems = [
   },
 ];
 
-export const categories = [
-  {
-    id: 1,
-    img: "https://images.pexels.com/photos/296158/pexels-photo-296158.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "Back to School!",
-  },
-  {
-    id: 2,
-    img: "https://images.pexels.com/photos/6003052/pexels-photo-6003052.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "Casual wear",
-  },
-  {
-    id: 3,
-    img: "https://images.pexels.com/photos/1166868/pexels-photo-1166868.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    title: "Running shoes",
-  },
-];
-
 export const popularProducts = [
   {
     id: 1,
