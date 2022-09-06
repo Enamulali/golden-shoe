@@ -14,6 +14,8 @@ const Returns = () => {
         esse numquam suscipit quae aliquam odit, voluptate minus laudantium at
         in impedit?
       </p>
+
+      <p>Need more help? Contact us via live chat here.</p>
     </div>
   );
 };
