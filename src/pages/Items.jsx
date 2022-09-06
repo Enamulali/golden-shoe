@@ -37,6 +37,7 @@ const Items = () => {
                     <span id="price">💵: </span>
                     <span>£{item.price}</span>
                   </p>
+                  <p>In Stock: Yes</p>
                 </li>
               </Link>
             );
