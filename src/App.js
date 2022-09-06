@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import SingleItem from "./components/SingleItem";
 import Checkout from "./pages/Checkout";
@@ -17,6 +18,7 @@ function App() {
         <Route path="/items/:item_id" element={<SingleItem />} />
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
+      <Footer />
     </>
   );
 }
