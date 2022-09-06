@@ -1,9 +1,16 @@
 import React from "react";
-import "../components/Items.css";
+import styled from "styled-components";
+
+const Container = styled.div`
+  padding: 1.5em;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+`;
 
 const Returns = () => {
   return (
-    <div className="returns-container">
+    <Container>
       <h1>Returns information</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
@@ -16,7 +23,7 @@ const Returns = () => {
       </p>
 
       <p>Need more help? Contact us via live chat here.</p>
-    </div>
+    </Container>
   );
 };
 
