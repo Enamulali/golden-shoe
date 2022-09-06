@@ -1,5 +1,5 @@
 import React from "react";
-import { BsBasket3Fill } from "react-icons/bs";
+import { BsBasket3Fill, BsFillChatDotsFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -9,11 +9,16 @@ const Navbar = () => {
       <Link to={"/"} style={{ textDecoration: "none" }}>
         <h1 className="Title">Golden Shoe</h1>
       </Link>
-      <Link to={"/checkout"} style={{ textDecoration: "none" }}>
-        <h1 className="Title">
+      <h1 className="Title">
+        <Link to={"/checkout"} style={{ textDecoration: "none" }}>
           <BsBasket3Fill />
-        </h1>
-      </Link>
+        </Link>
+      </h1>
+      <h1 className="Title">
+        <Link to={"/chat"} style={{ textDecoration: "none" }}>
+          <BsFillChatDotsFill />
+        </Link>{" "}
+      </h1>
     </div>
   );
 };
