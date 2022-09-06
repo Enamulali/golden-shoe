@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">golden-shoe</string>
+    <string name="title_activity_main">golden-shoe</string>
+    <string name="package_name">com.golden.shoe.app</string>
+    <string name="custom_url_scheme">com.golden.shoe.app</string>
+</resources>
