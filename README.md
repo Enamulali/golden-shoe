@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Welcome to NC News!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive front-end application for British Shoe Company Golden Shoe.
 
-## Available Scripts
+### To view a live version of this app, visit:
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+1. To set up this project locally, run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+git clone https://github.com/Enamulali/golden-shoe.git
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Now navigate inside the folder `client`
 
-### `npm test`
+```
+cd client
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Run `npm install` to install dependencies. This may take a few minutes.
 
-### `npm run build`
+4. Run `npm start` to run the app. This is available on
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+http://localhost:3000/
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Native iOS and android apps
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You can now run the application as native android and iOS apps. Built using [CapacitorJS](https://capacitorjs.com/docs/).
 
-### `npm run eject`
+### Pre-requisites:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<details>
+<summary>Android</summary>
+<br>
+1. You should have android studio installed on your machine. Check here: https://developer.android.com/studio.
+</details>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<details>
+<summary>iOS</summary>
+<br>
+1. You should have XCode installed on your machine. You can install using the Apple App Store on your Mac. Check here: https://apps.apple.com/us/app/xcode/id497799835?mt=12
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. You should install Xcode command line tools:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+xcode-select --install
+```
 
-## Learn More
+3. Install Homebrew to install Cocoapods:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Install Cocoapods:
 
-### Code Splitting
+```
+brew install cocoapods
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Install Cocoapods without Homebrew:
 
-### Analyzing the Bundle Size
+```
+sudo gem install cocoapods
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br>
+</details>
 
-### Making a Progressive Web App
+[For further support refer to capacitor environment setup docs](https://capacitorjs.com/docs/getting-started/environment-setup)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Running the app:
 
-### Advanced Configuration
+1. Run `npm install` to install dependencies. This may take a few minutes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+2. Build a local version of the app, using:
 
-### Deployment
+```
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+3. Sync your built web application to your native project, using:
 
-### `npm run build` fails to minify
+```
+npx cap sync
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. To open the project in Xcode, run:
+
+```
+npx cap open ios
+```
+
+To open the project in Android Studio, run:
+
+```
+npx cap open android
+```
+
+5. To run the project on a device or simulator, run:
+
+```
+npx cap run ios
+npx cap run android
+```
+
+# Navigating the app
+
+After opening the app, you are greeted with with a homepage, from which you can navigate the app.
