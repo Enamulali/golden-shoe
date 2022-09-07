@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   height: 20vh;
-  background-color: #4b6587;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -20,7 +20,7 @@ const Title = styled.h1`
   margin-bottom: 0em;
   margin-top: 0em;
   font-size: 30px;
-  color: white;
+  color: black;
 `;
 
 const Navbar = () => {
@@ -31,13 +31,16 @@ const Navbar = () => {
       </Link>
       <Container>
         <Title>
-          <Link to={"/checkout"} style={{ textDecoration: "none" }}>
+          <Link
+            to={"/checkout"}
+            style={{ textDecoration: "none", color: "black" }}
+          >
             <BsBasket3Fill />
           </Link>
         </Title>
 
         <Title>
-          <Link to={"/chat"} style={{ textDecoration: "none" }}>
+          <Link to={"/chat"} style={{ textDecoration: "none", color: "black" }}>
             <BsFillChatDotsFill />
           </Link>
         </Title>
