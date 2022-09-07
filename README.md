@@ -110,3 +110,5 @@ npx cap run android
 # Navigating the app
 
 After opening the app, you are greeted with with a homepage, from which you can navigate the app.
+
+test

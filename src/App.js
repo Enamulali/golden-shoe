@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <div ref={nav} />
-      <Banner />
+      {window.innerWidth < 480 ? null : <Banner />}
       <Navbar />
       {window.location.pathname.includes(`/items/`) ? (
         <button className="category-btns" onClick={() => navigate(-1)}>

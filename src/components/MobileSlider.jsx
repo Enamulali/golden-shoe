@@ -57,7 +57,7 @@ const Image = styled.img`
 `;
 
 const Title = styled.h1`
-  font-size: 40px;
+  font-size: 20px;
 `;
 
 const MobileSlider = () => {
@@ -72,7 +72,7 @@ const MobileSlider = () => {
 
   return (
     <Container>
-      <Title>Trending now ..</Title>
+      <Title>Trending</Title>
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <BsFillArrowLeftSquareFill />
       </Arrow>
